@@ -1,5 +1,5 @@
 Compiling Program: C:\DataFlex Projects\FutbolWebApp\AppSrc\WebApp.src
-Memory Available: 7729242112
+Memory Available: 4291301376
 1>Use AllWebAppClasses.pkg
 Using pre-compiled package ALLWEBAPPCLASSES.PKG
 Including file: AllWebAppClasses.x64.pkd    (C:\Program Files\DataFlex 25.0\Pkg\AllWebAppClasses.x64.pkd)
@@ -2082,7 +2082,7 @@ Including file: jugadorposicion.fd    (C:\DataFlex Projects\FutbolWebApp\DDSrc\j
 37830>>>        Set psCSSClass to "MobileList"
 37831>>>        Set pbServerOnRowClick to True
 37832>>>        Set pbFillHeight to True
-37833>>>        Set pbShowHeader to False
+37833>>>        Set pbShowHeader to True
 37834>>>        Set piSortColumn to 0
 37835>>>
 37835>>>        Object ojugadorNombre is a cWebColumn
@@ -2425,7 +2425,7 @@ Including file: ZoomJugador.wo    (C:\DataFlex Projects\FutbolWebApp\AppSrc\Zoom
 38118>Send StartWebApp of oWebApp
 38119>
 Summary
-Memory Available: 7749406720
+Memory Available: 4278382592
 Total Warnings : 0
 Total Errors   : 0
 Total Symbols  : 25373
