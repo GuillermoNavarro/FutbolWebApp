@@ -1,0 +1,4 @@
+# Ignorar archivos por extensión
+*.exe
+*.log
+*.cch
