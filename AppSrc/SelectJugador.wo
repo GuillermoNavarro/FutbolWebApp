@@ -86,6 +86,7 @@ Object oSelectJugador is a cWebView
             Set pbFixedWidth to True
             Set pbResizable to False
             Set piListRowSpan to 1
+            Set pbShowCaption to False
             Set psBtnCssClass to "WebButtonIcon WebIcon_Info"
             Set peAlign to alignRight
 
@@ -155,7 +156,7 @@ Object oSelectJugador is a cWebView
             Set psCaption to "New"
 
 // ToDo: Fill in the from-main Zoom view object name for navigate forward
-//            WebRegisterPath ntNavigateForward oZoomView
+            WebRegisterPath ntNavigateForward oZoomJugador
 
             Procedure OnClick
                 Send NavigatePath

@@ -1,5 +1,5 @@
-﻿// C:\DataFlex Projects\FutbolWebApp\AppSrc\SelectEntrenador.wo
-// SelectEntrenador
+﻿// C:\DataFlex Projects\FutbolWebApp\AppSrc\SelectPosicion.wo
+// SelectPosicion
 //
 
 Use cWebView.pkg
@@ -9,31 +9,21 @@ Use cWebMenuItem.pkg
 Use cWebColumnButton.pkg
 Use cWebColumn.pkg
 
-Use cligaDataDictionary.dd
-Use cequipoDataDictionary.dd
-Use centrenadorDataDictionary.dd
+Use cposicionDataDictionary.dd
 
-Object oSelectEntrenador is a cWebView
-    Set psCaption to "SelectEntrenador"
+Object oSelectPosicion is a cWebView
+    Set psCaption to "SelectPosicion"
     Set peWebViewStyle to wvsDrilldown
     Set peViewType to vtSelect
     Set piColumnCount to 12
     Set pbShowCaption to False
     Set piMaxWidth to 1024
 
-    Object oliga_DD is a cligaDataDictionary
+    Object oposicion_DD is a cposicionDataDictionary
     End_Object 
 
-    Object oequipo_DD is a cequipoDataDictionary
-        Set DDO_Server To oliga_DD
-    End_Object 
-
-    Object oentrenador_DD is a centrenadorDataDictionary
-        Set DDO_Server To oequipo_DD
-    End_Object 
-
-    Set Main_DD To oentrenador_DD
-    Set Server  To oentrenador_DD
+    Set Main_DD To oposicion_DD
+    Set Server  To oposicion_DD
 
 
     Object oList is a cWebList
@@ -44,54 +34,24 @@ Object oSelectEntrenador is a cWebView
         Set pbShowHeader to True
         Set piSortColumn to 0
 
-        Object oentrenadorNombre is a cWebColumn
-            Entry_Item entrenador.Nombre
+        Object oposicionNombre is a cWebColumn
+            Entry_Item posicion.Nombre
             Set psCaption to "Nombre"
-            Set piWidth to 600
-        End_Object 
-
-        Object oentrenadorApellido is a cWebColumn
-            Entry_Item entrenador.Apellido
-            Set psCaption to "Apellido"
-            Set piWidth to 600
-        End_Object 
-
-        Object oentrenadorNacionalidad is a cWebColumn
-            Entry_Item entrenador.Nacionalidad
-            Set psCaption to "Nacionalidad"
             Set piWidth to 500
         End_Object 
-
-        /*Object oequipoNombre is a cWebColumn
-            Entry_Item equipo.Nombre
-            Set psCaption to "equipo.Nombre"
-            Set piWidth to 1201
-        End_Object 
-
-        Object oligaNombre is a cWebColumn
-            Entry_Item liga.Nombre
-            Set psCaption to "liga.Nombre"
-            Set piWidth to 1000
-        End_Object 
-
-        Object oligaPais is a cWebColumn
-            Entry_Item liga.Pais
-            Set psCaption to "liga.Pais"
-            Set piWidth to 500
-        End_Object */
 
         Object oDetailButton is a cWebColumnButton
             Set psCaption to "btn"
             Set piWidth to 45
             Set pbFixedWidth to True
             Set pbResizable to False
-            Set pbShowCaption to False
             Set piListRowSpan to 1
+            Set pbShowCaption to False
             Set psBtnCssClass to "WebButtonIcon WebIcon_Info"
             Set peAlign to alignRight
 
 // ToDo: Fill in the from-main Zoom view object name for navigate forward
-           WebRegisterPath ntNavigateForward oZoomEntrenador
+            WebRegisterPath ntNavigateForward oZoomPosicion
 
             Procedure OnClick
                 Send NavigatePath
@@ -156,7 +116,7 @@ Object oSelectEntrenador is a cWebView
             Set psCaption to "New"
 
 // ToDo: Fill in the from-main Zoom view object name for navigate forward
-            WebRegisterPath ntNavigateForward oZoomEntrenador
+            WebRegisterPath ntNavigateForward oZoomPosicion
 
             Procedure OnClick
                 Send NavigatePath
