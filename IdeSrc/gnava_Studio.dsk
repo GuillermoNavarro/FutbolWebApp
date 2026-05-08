@@ -1,23 +1,14 @@
 [Workspace]
 CurrentProject=WebApp.src
 Location=C:\DataFlex Projects\FutbolWebApp\IdeSrc\gnava_Studio.dsk
-CreateNew=-1
+CreateNew=3
 [TabWindows]
 GroupCount=1
 HorizontalGroups=1
 [TabGroup0]
 GroupSize=40
-SelectedTab=2
+SelectedTab=4
 [Window0]
-Filename=Workspace Dashboard
-ViewType=101
-Top=21
-Left=0
-Bottom=390
-Right=858
-TabIndex=0
-TabGroup=0
-[Window1]
 Filename=C:\DataFlex Projects\FutbolWebApp\AppSrc\ZoomEntrenador.wo
 ViewType=1
 Top=21
@@ -28,36 +19,67 @@ CursorLine=0
 CursorColumn=0
 TabIndex=3
 TabGroup=0
-[Window2]
-Filename=C:\DataFlex Projects\FutbolWebApp\AppSrc\Dashboard.wo
-ViewType=1
-Top=21
-Left=0
-Bottom=390
-Right=858
-CursorLine=80
-CursorColumn=22
-TabIndex=4
-TabGroup=0
-[Window3]
-Filename=C:\DataFlex Projects\FutbolWebApp\AppSrc\WebApp.src
-ViewType=1
-Top=21
-Left=0
-Bottom=390
-Right=858
-CursorLine=0
-CursorColumn=0
-TabIndex=1
-TabGroup=0
-[Window4]
+[Window1]
 Filename=C:\DataFlex Projects\FutbolWebApp\AppSrc\SelectEntrenador.wo
 ViewType=1
 Top=21
 Left=0
 Bottom=390
 Right=858
+CursorLine=11
+CursorColumn=26
+TabIndex=2
+TabGroup=0
+[Window2]
+Filename=C:\DataFlex Projects\FutbolWebApp\AppSrc\ZoomJugador.wo
+ViewType=1
+Top=21
+Left=0
+Bottom=390
+Right=858
 CursorLine=0
 CursorColumn=0
-TabIndex=2
+TabIndex=6
+TabGroup=0
+[Window3]
+Filename=C:\DataFlex Projects\FutbolWebApp\AppSrc\SelectJugador.wo
+ViewType=1
+Top=21
+Left=0
+Bottom=390
+Right=858
+CursorLine=92
+CursorColumn=56
+TabIndex=5
+TabGroup=0
+[Window4]
+Filename=Workspace Dashboard
+ViewType=101
+Top=21
+Left=0
+Bottom=390
+Right=858
+TabIndex=0
+TabGroup=0
+[Window5]
+Filename=C:\DataFlex Projects\FutbolWebApp\AppSrc\WebApp.src
+ViewType=1
+Top=21
+Left=0
+Bottom=390
+Right=858
+CursorLine=163
+CursorColumn=0
+TabIndex=1
+TabGroup=0
+[Window6]
+Filename=C:\DataFlex Projects\FutbolWebApp\AppSrc\Dashboard.wo
+ViewType=1
+Top=21
+Left=0
+Bottom=390
+Right=858
+CursorLine=125
+CursorColumn=27
+TabIndex=4
 TabGroup=0
