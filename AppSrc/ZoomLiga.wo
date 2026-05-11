@@ -1,5 +1,5 @@
-﻿// C:\DataFlex Projects\FutbolWebApp\AppSrc\ZoomEquipo.wo
-// ZoomEquipo
+﻿// C:\DataFlex Projects\FutbolWebApp\AppSrc\ZoomLiga.wo
+// ZoomLiga
 //
 
 Use cWebView.pkg
@@ -9,11 +9,10 @@ Use cWebMenuItem.pkg
 Use cWebForm.pkg
 
 Use cligaDataDictionary.dd
-Use cequipoDataDictionary.dd
 
-Object oZoomEquipo is a cWebView
+Object oZoomLiga is a cWebView
     Set piColumnCount to 12
-    Set psCaption to "ZoomEquipo"
+    Set psCaption to "ZoomLiga"
     Set peWebViewStyle to wvsDrilldown
     Set peViewType to vtZoom
     Set pbShowCaption to False
@@ -23,48 +22,44 @@ Object oZoomEquipo is a cWebView
     Object oliga_DD is a cligaDataDictionary
     End_Object 
 
-    Object oequipo_DD is a cequipoDataDictionary
-        Set DDO_Server To oliga_DD
-    End_Object 
-
-    Set Main_DD To oequipo_DD
-    Set Server  To oequipo_DD
+    Set Main_DD To oliga_DD
+    Set Server  To oliga_DD
 
 
     Object oWebMainPanel is a cWebPanel
         Set piColumnCount to 12
         WebSetResponsive piColumnCount rmMobile to 4
 
-        Object oequipoNombre is a cWebForm
-            Entry_Item equipo.Nombre
+        Object oligaNombre is a cWebForm
+            Entry_Item liga.Nombre
             Set piColumnSpan to 12
             Set piColumnIndex to 0
             Set peLabelPosition to lpTop
             Set psLabel to "Nombre"
         End_Object 
 
-        Object oligaNombre is a cWebForm
-            Entry_Item liga.Nombre
-            Set piColumnSpan to 12
-            Set piColumnIndex to 0
-            Set peLabelPosition to lpTop
-            Set psLabel to "Liga"
-            Set pbPromptButton to True
-
-// ToDo: Fill in the from-child parent Select view object name for navigate forward
-            WebRegisterPath ntNavigateForward oSelectLiga
-
-            Procedure OnPrompt
-                Send NavigatePath
-            End_Procedure
-        End_Object 
-
         Object oligaPais is a cWebForm
             Entry_Item liga.Pais
-            Set piColumnSpan to 9
+            Set piColumnSpan to 8
             Set piColumnIndex to 0
             Set peLabelPosition to lpTop
-            Set psLabel to "Pais Liga"
+            Set psLabel to "Pais"
+        End_Object 
+
+        Object oligaEquipos is a cWebForm
+            Entry_Item liga.Equipos
+            Set piColumnSpan to 2
+            Set piColumnIndex to 0
+            Set peLabelPosition to lpTop
+            Set psLabel to "Equipos"
+        End_Object 
+
+        Object oligaEquiposMax is a cWebForm
+            Entry_Item liga.EquiposMax
+            Set piColumnSpan to 2
+            Set piColumnIndex to 0
+            Set peLabelPosition to lpTop
+            Set psLabel to "Max Equipos"
         End_Object 
     End_Object 
 
