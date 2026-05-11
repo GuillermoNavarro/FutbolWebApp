@@ -1,5 +1,5 @@
 Compiling Program: C:\DataFlex Projects\FutbolWebApp\AppSrc\WebApp.src
-Memory Available: 7250227200
+Memory Available: 6667292672
 1>Use AllWebAppClasses.pkg
 Using pre-compiled package ALLWEBAPPCLASSES.PKG
 Including file: AllWebAppClasses.x64.pkd    (C:\Program Files\DataFlex 25.0\Pkg\AllWebAppClasses.x64.pkd)
@@ -1492,7 +1492,7 @@ Including file: Dashboard.wo    (C:\DataFlex Projects\FutbolWebApp\AppSrc\Dashbo
 37372>>>                Set pbServerOnClick to True
 37373>>>                Set piColumnSpan to 6
 37374>>>                Set psCSSClass to "Tile DarkAlternate"
-37375>>>                Set psHtml to '<div class="WebCon_Sizer" data-ServerOnClick="openview"><div Class="Tile_Title">Entrenador</div><div class="Tile_Subtitle"></div></div>'
+37375>>>                Set psHtml to '<div class="WebCon_Sizer" style="border-radius: 8px; box-shadow: 4px 8px 10px rgba(0,0,0,0.1);" data-ServerOnClick="openview"><div  Class="Tile_Title" >Entrenador</div><div class="Tile_Subtitle"></div></div>'
 37376>>>            
 37376>>>                WebRegisterPath ntNavigateForwardCustom oSelectEntrenador
 37382>>>                
@@ -1507,7 +1507,7 @@ Including file: Dashboard.wo    (C:\DataFlex Projects\FutbolWebApp\AppSrc\Dashbo
 37391>>>                Set piColumnSpan to 6
 37392>>>                Set piColumnIndex to 6
 37393>>>                Set psCSSClass to "Tile DarkAlternate"
-37394>>>                Set psHtml to '<div class="WebCon_Sizer" data-ServerOnClick="openview"><div Class="Tile_Title">Jugador</div><div class="Tile_Subtitle"></div></div>'
+37394>>>                Set psHtml to '<div class="WebCon_Sizer" style="border-radius: 8px; box-shadow: 4px 8px 10px rgba(0,0,0,0.1);" data-ServerOnClick="openview"><div Class="Tile_Title">Jugador</div><div class="Tile_Subtitle"></div></div>'
 37395>>>            
 37395>>>                WebRegisterPath ntNavigateForwardCustom oSelectJugador
 37401>>>                
@@ -1521,7 +1521,7 @@ Including file: Dashboard.wo    (C:\DataFlex Projects\FutbolWebApp\AppSrc\Dashbo
 37409>>>                Set pbServerOnClick to True
 37410>>>                Set piColumnSpan to 6
 37411>>>                Set psCSSClass to "Tile DarkAlternate"
-37412>>>                Set psHtml to '<div class="WebCon_Sizer" data-ServerOnClick="openview"><div Class="Tile_Title">Posicion</div><div class="Tile_Subtitle"></div></div>'
+37412>>>                Set psHtml to '<div class="WebCon_Sizer" style="border-radius: 8px; box-shadow: 4px 8px 10px rgba(0,0,0,0.1);" data-ServerOnClick="openview"><div Class="Tile_Title">Posicion</div><div class="Tile_Subtitle"></div></div>'
 37413>>>            
 37413>>>                WebRegisterPath ntNavigateForwardCustom oSelectPosicion
 37419>>>                
@@ -1536,7 +1536,7 @@ Including file: Dashboard.wo    (C:\DataFlex Projects\FutbolWebApp\AppSrc\Dashbo
 37428>>>                Set piColumnSpan to 6
 37429>>>                Set piColumnIndex to 6
 37430>>>                Set psCSSClass to "Tile DarkAlternate"
-37431>>>                Set psHtml to '<div class="WebCon_Sizer" data-ServerOnClick="openview"><div Class="Tile_Title">Equipo</div><div class="Tile_Subtitle"></div></div>'
+37431>>>                Set psHtml to '<div class="WebCon_Sizer" style="border-radius: 8px; box-shadow: 4px 8px 10px rgba(0,0,0,0.1);" data-ServerOnClick="openview"><div Class="Tile_Title">Equipo</div><div class="Tile_Subtitle"></div></div>'
 37432>>>            
 37432>>>                WebRegisterPath ntNavigateForwardCustom oSelectEquipo
 37438>>>                
@@ -1550,7 +1550,7 @@ Including file: Dashboard.wo    (C:\DataFlex Projects\FutbolWebApp\AppSrc\Dashbo
 37446>>>                Set pbServerOnClick to True
 37447>>>                Set piColumnSpan to 6
 37448>>>                Set psCSSClass to "Tile DarkAlternate"
-37449>>>                Set psHtml to '<div class="WebCon_Sizer" data-ServerOnClick="openview"><div Class="Tile_Title">Liga</div><div class="Tile_Subtitle"></div></div>'
+37449>>>                Set psHtml to '<div class="WebCon_Sizer" style="border-radius: 8px; box-shadow: 4px 8px 10px rgba(0,0,0,0.1);" data-ServerOnClick="openview"><div Class="Tile_Title">Liga</div><div class="Tile_Subtitle"></div></div>'
 37450>>>            
 37450>>>                WebRegisterPath ntNavigateForwardCustom oSelectLiga
 37456>>>                
@@ -3482,7 +3482,7 @@ Including file: ZoomLiga.wo    (C:\DataFlex Projects\FutbolWebApp\AppSrc\ZoomLig
 39036>Send StartWebApp of oWebApp
 39037>
 Summary
-Memory Available: 7239651328
+Memory Available: 6655463424
 Total Warnings : 0
 Total Errors   : 0
 Total Symbols  : 25605
@@ -3490,6 +3490,6 @@ Total Resources: 0
 Total Commands : 39036
 Total Windows  : 0
 Total Pages    : 0
-Static Data    : 483999
+Static Data    : 484347
 Message area   : 261984
-Total Blocks   : 17337
+Total Blocks   : 17339
