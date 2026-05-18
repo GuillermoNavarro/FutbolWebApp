@@ -122,6 +122,7 @@ Object oZoomPosicion is a cWebView
         Case Begin
             Case (NavigateData.eNavigateType = nfFromMain)
                 // If from main, this is a propbably a main file Select to Zoom.
+                Send ShowInfoBox ("vengo de main " + Name(hoInvokingObject))
                 Case Break
 
             Case (NavigateData.eNavigateType = nfFromParent)
