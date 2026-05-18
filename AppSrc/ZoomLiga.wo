@@ -29,6 +29,18 @@ Object oZoomLiga is a cWebView
     Object oWebMainPanel is a cWebPanel
         Set piColumnCount to 12
         WebSetResponsive piColumnCount rmMobile to 4
+        
+         Object oEquipoButton is a cWebButton
+            //Set psCSSClass to "WebButtonIcon WebIcon_Find"
+            Set pbRender to True
+            Set psCaption to "Equipos"
+                
+            WebRegisterPath ntNavigateForward oSelectEquipo
+
+            Procedure OnClick
+                Send NavigatePath
+            End_Procedure
+          End_Object
 
         Object oligaNombre is a cWebForm
             Entry_Item liga.Nombre
