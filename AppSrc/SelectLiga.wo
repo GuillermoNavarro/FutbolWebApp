@@ -152,6 +152,7 @@ Object oSelectLiga is a cWebView
 
             Case (NavigateData.eNavigateType = nfFromChild)
                 // If from child, this is a probably a parent lookup from a Zoom
+                 Send ShowInfoBox ("vengo de child " + Name(hoInvokingObject))
                 Case Break
 
             Case (NavigateData.eNavigateType = nfFromMain)
