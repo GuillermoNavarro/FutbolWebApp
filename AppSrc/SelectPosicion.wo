@@ -149,6 +149,7 @@ Object oSelectPosicion is a cWebView
 
             Case Else // must be nfUndefined
                 // This may be the start of a drilldown query or this may be used for some kind of custom query.
+                Send ShowInfoBox ("vengo undefined " + Name(hoInvokingObject))
 
         Case End
 
