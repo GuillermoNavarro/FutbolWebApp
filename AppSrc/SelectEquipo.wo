@@ -153,6 +153,7 @@ Object oSelectEquipo is a cWebView
         Case Begin
             Case (NavigateData.eNavigateType = nfFromParent)
                 // If from parent, this is a constrained drill down
+                Send ShowInfoBox ("vengo de parent " + Name(hoInvokingObject))
                 Case Break
 
             Case (NavigateData.eNavigateType = nfFromChild)
