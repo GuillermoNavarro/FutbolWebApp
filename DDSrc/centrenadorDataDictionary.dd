@@ -4,6 +4,12 @@ Open entrenador
 Open hijoentrenador
 Open equipo
 
+Object equipoid is a ValidationTable
+    Procedure Fill_List
+        Forward Send Fill_List
+    End_Procedure
+End_Object
+
 Class centrenadorDataDictionary is a DataDictionary
     
     Procedure Construct_Object
@@ -18,6 +24,10 @@ Class centrenadorDataDictionary is a DataDictionary
         Set Foreign_Field_Option DD_KEYFIELD DD_FINDREQ to True
         Set Foreign_Field_Option DD_INDEXFIELD DD_NOPUT to True
         Set Foreign_Field_Option DD_DEFAULT DD_DISPLAYONLY to True
+
+        Set Field_Value_Table Field entrenador.EquipoID to equipoid
+        
+        
 
     End_Procedure
 
