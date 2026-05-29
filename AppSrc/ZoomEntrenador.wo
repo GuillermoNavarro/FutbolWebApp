@@ -39,6 +39,19 @@ Object oZoomEntrenador is a cWebView
     Object oWebMainPanel is a cWebPanel
         Set piColumnCount to 12
         WebSetResponsive piColumnCount rmMobile to 4
+        
+        Object oEquipoButton is a cWebButton
+            Set pbRender to True
+            Set psCaption to "Despedir"
+            Set piColumnSpan to 4
+            Set piColumnIndex to 2
+                
+            Procedure OnClick
+                Send Clear of oequipo_DD
+                Set Field_Changed_Value of oentrenador_DD Field entrenador.EquipoID to ""
+                Send Request_Save of oentrenador_DD
+            End_Procedure
+          End_Object
 
         Object oentrenadorNombre is a cWebForm
             Entry_Item entrenador.Nombre
