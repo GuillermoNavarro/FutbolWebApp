@@ -7,7 +7,7 @@ GroupCount=1
 HorizontalGroups=1
 [TabGroup0]
 GroupSize=40
-SelectedTab=5
+SelectedTab=7
 [Window0]
 Filename=Workspace Dashboard
 ViewType=101
@@ -18,17 +18,6 @@ Right=1403
 TabIndex=0
 TabGroup=0
 [Window1]
-Filename=C:\DataFlex Projects\FutbolWebApp\AppSrc\WebApp.src
-ViewType=1
-Top=21
-Left=0
-Bottom=992
-Right=1403
-CursorLine=112
-CursorColumn=46
-TabIndex=1
-TabGroup=0
-[Window2]
 Filename=C:\DataFlex Projects\FutbolWebApp\AppSrc\Dashboard.wo
 ViewType=1
 Top=21
@@ -39,27 +28,7 @@ CursorLine=161
 CursorColumn=56
 TabIndex=2
 TabGroup=0
-[Window3]
-Filename=C:\DataFlex Projects\FutbolWebApp\DDSrc\centrenadorDataDictionary.dd
-ViewType=3
-Top=21
-Left=0
-Bottom=992
-Right=1403
-TabIndex=6
-TabGroup=0
-[Window4]
-Filename=C:\DataFlex Projects\FutbolWebApp\DDSrc\centrenadorDataDictionary.dd
-ViewType=1
-Top=21
-Left=0
-Bottom=992
-Right=1403
-CursorLine=0
-CursorColumn=0
-TabIndex=7
-TabGroup=0
-[Window5]
+[Window2]
 Filename=C:\DataFlex Projects\FutbolWebApp\AppSrc\SelectEquipo.wo
 ViewType=1
 Top=21
@@ -70,7 +39,7 @@ CursorLine=160
 CursorColumn=77
 TabIndex=3
 TabGroup=0
-[Window6]
+[Window3]
 Filename=C:\DataFlex Projects\FutbolWebApp\AppSrc\ZoomLiga.wo
 ViewType=1
 Top=21
@@ -81,7 +50,7 @@ CursorLine=49
 CursorColumn=20
 TabIndex=4
 TabGroup=0
-[Window7]
+[Window4]
 Filename=entrenador
 ViewType=4
 Top=21
@@ -90,14 +59,45 @@ Bottom=992
 Right=1403
 TabIndex=8
 TabGroup=0
-[Window8]
+[Window5]
 Filename=C:\DataFlex Projects\FutbolWebApp\AppSrc\ZoomEntrenador.wo
 ViewType=1
 Top=21
 Left=0
 Bottom=992
 Right=1403
-CursorLine=50
-CursorColumn=89
+CursorLine=0
+CursorColumn=0
 TabIndex=5
+TabGroup=0
+[Window6]
+Filename=C:\DataFlex Projects\FutbolWebApp\DDSrc\centrenadorDataDictionary.dd
+ViewType=3
+Top=21
+Left=0
+Bottom=992
+Right=1403
+TabIndex=6
+TabGroup=0
+[Window7]
+Filename=C:\DataFlex Projects\FutbolWebApp\AppSrc\WebApp.src
+ViewType=1
+Top=21
+Left=0
+Bottom=992
+Right=1403
+CursorLine=69
+CursorColumn=70
+TabIndex=1
+TabGroup=0
+[Window8]
+Filename=C:\DataFlex Projects\FutbolWebApp\DDSrc\centrenadorDataDictionary.dd
+ViewType=1
+Top=21
+Left=0
+Bottom=992
+Right=1403
+CursorLine=0
+CursorColumn=0
+TabIndex=7
 TabGroup=0

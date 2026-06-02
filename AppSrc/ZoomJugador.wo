@@ -40,11 +40,24 @@ Object oZoomJugador is a cWebView
         Set piColumnCount to 12
         WebSetResponsive piColumnCount rmMobile to 4
         
+        Object oLiberarButton is a cWebButton
+            Set pbRender to True
+            Set psCaption to "Liberar"
+            Set piColumnSpan to 4
+            Set piColumnIndex to 2
+                
+            Procedure OnClick
+                Forward Send OnClick
+                Send Request_ClearBindingTable of oequipoNombre
+                Send Request_Save of ojugador_DD
+            End_Procedure
+          End_Object
+        
         Object oEquipoButton is a cWebButton
             Set pbRender to True
             Set psCaption to "Ver Posiciones"
             Set piColumnSpan to 4
-            Set piColumnIndex to 2
+            Set piColumnIndex to 6
                 
             WebRegisterPath ntNavigateForward oSelectPosicion
 
