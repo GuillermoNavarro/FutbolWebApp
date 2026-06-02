@@ -47,7 +47,9 @@ Object oZoomJugador is a cWebView
             Set piColumnIndex to 2
                 
             Procedure OnClick
-                Send Request_ClearBindingTable of oEquipo_DD
+                Forward Send OnClick
+                Send Request_ClearBindingTable of oequipoNombre
+                Send Request_Save of ojugador_DD
             End_Procedure
           End_Object
         
