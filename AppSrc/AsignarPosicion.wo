@@ -5,12 +5,13 @@ Use cWebForm.pkg
 Use cjugadorposicionDataDictionary.dd
 Use cposicionDataDictionary.dd
 Use cjugadorDataDictionary.dd
+Use cWebButton.pkg
 
 Object oAsignarPosicion is a cWebView
     Set piColumnCount to 12
-    Set psCaption to "AsignarPosicion"
+    //Set psCaption to "AsignarPosicion"
     Set peWebViewStyle to wvsDrilldown
-    Set peViewType to vtZoom
+    Set peViewType to vtSelect
     
     Object oliga_DD is a cligaDataDictionary
     End_Object 
@@ -29,7 +30,6 @@ Object oAsignarPosicion is a cWebView
     Object ojugadorPosicion_DD is a cjugadorposicionDataDictionary
         Set DDO_Server to ojugador_DD
         Set DDO_Server to oposicion_DD
-        Set Constrain_File to jugador.File_Number
     End_Object
     
     Object oposicionTodas_DD is a cposicionDataDictionary
@@ -46,6 +46,7 @@ Object oAsignarPosicion is a cWebView
             Set piColumnIndex to 1
             Set piColumnSpan to 4
             Set pbShowHeader to True
+            Set piMinHeight to 1000
             
             Object oColumnTodas is a cWebColumn
                 Entry_Item posicion.Nombre
@@ -61,6 +62,7 @@ Object oAsignarPosicion is a cWebView
             Set piColumnIndex to 6
             Set piColumnSpan to 4
             Set pbShowHeader to True
+            Set piMinHeight to 1000
             
             Object oColunJugador is a cWebColumn
                 Entry_Item posicion.Nombre
@@ -70,8 +72,9 @@ Object oAsignarPosicion is a cWebView
         End_Object
         
     End_Object
+
     
-     Object oActionGroup is a cWebMenuGroup
+     /*Object oActionGroup is a cWebMenuGroup
 
         Object oSaveBtn is a cWebMenuItem
             Set psCSSClass to "WebSaveMenuItem"
@@ -149,7 +152,7 @@ Object oAsignarPosicion is a cWebView
     Procedure OnViewDeleted Handle hoDDO
         Send NavigateClose Self
     End_Procedure
-
+*/
     Procedure OnNavigateForward tWebNavigateData NavigateData Integer hoInvokingView Integer hoInvokingObject
         Case Begin
             Case (NavigateData.eNavigateType = nfFromMain)
@@ -171,10 +174,8 @@ Object oAsignarPosicion is a cWebView
 
         Case End
         
-        Send Clear of oposicionTodas_DD
-        Send MoveToFirstRow of oposicion
-
-        Send SetActionButtons
+        Send RefreshListFromDD of oposicion
+        //Send SetActionButtons
 
     End_Procedure
     

@@ -158,7 +158,7 @@ Object oZoomJugador is a cWebView
             Set piColumnSpan to 0
             Set psCaption to "Modificar Posiciones"
             
-            WebRegisterPath ntNavigateForward oAsignarPosicion
+            WebRegisterPath ntNavigateForward oAsignarPosicion Self
 
             Procedure OnClick
                 Send NavigatePath
@@ -166,7 +166,7 @@ Object oZoomJugador is a cWebView
        
         End_Object
 
-        Object oposicion is a cWebList
+        Object oposicionJugador is a cWebList
             Set Server to ojugadorPosicion_DD
             Set Ordering to 2
             Set piColumnSpan to 12
@@ -279,6 +279,7 @@ Object oZoomJugador is a cWebView
             Case Else // must be nfUndefined
 
         Case End
+        
 
         Send SetActionButtons
 
