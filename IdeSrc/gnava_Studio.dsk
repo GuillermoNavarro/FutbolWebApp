@@ -1,19 +1,19 @@
 [Workspace]
 CurrentProject=WebApp.src
 Location=C:\DataFlex Projects\FutbolWebApp\IdeSrc\gnava_Studio.dsk
-CreateNew=4
+CreateNew=3
 [TabWindows]
 GroupCount=1
 HorizontalGroups=1
 [TabGroup0]
 GroupSize=40
-SelectedTab=4
+SelectedTab=5
 [Window0]
 Filename=Workspace Dashboard
 ViewType=101
 Top=21
 Left=0
-Bottom=628
+Bottom=1233
 Right=1444
 TabIndex=0
 TabGroup=0
@@ -22,53 +22,75 @@ Filename=C:\DataFlex Projects\FutbolWebApp\AppSrc\WebApp.src
 ViewType=1
 Top=21
 Left=0
-Bottom=628
+Bottom=1233
 Right=1444
 CursorLine=69
 CursorColumn=70
 TabIndex=1
 TabGroup=0
 [Window2]
-Filename=C:\DataFlex Projects\FutbolWebApp\AppSrc\Dashboard.wo
-ViewType=1
-Top=21
-Left=0
-Bottom=628
-Right=1444
-CursorLine=161
-CursorColumn=56
-TabIndex=2
-TabGroup=0
-[Window3]
-Filename=C:\DataFlex Projects\FutbolWebApp\DDSrc\cjugadorposicionDataDictionary.dd
-ViewType=1
-Top=21
-Left=0
-Bottom=628
-Right=1444
-CursorLine=0
-CursorColumn=0
-TabIndex=5
-TabGroup=0
-[Window4]
 Filename=C:\DataFlex Projects\FutbolWebApp\AppSrc\ZoomLiga.wo
 ViewType=1
 Top=21
 Left=0
-Bottom=628
+Bottom=1233
 Right=1444
-CursorLine=86
-CursorColumn=36
+CursorLine=17
+CursorColumn=28
 TabIndex=3
 TabGroup=0
+[Window3]
+Filename=C:\DataFlex Projects\FutbolWebApp\AppSrc\Dashboard.wo
+ViewType=1
+Top=21
+Left=0
+Bottom=1233
+Right=1444
+CursorLine=157
+CursorColumn=16
+TabIndex=2
+TabGroup=0
+[Window4]
+Filename=C:\DataFlex Projects\FutbolWebApp\DDSrc\cposicionDataDictionary.dd
+ViewType=1
+Top=21
+Left=0
+Bottom=1233
+Right=1444
+CursorLine=0
+CursorColumn=0
+TabIndex=7
+TabGroup=0
 [Window5]
+Filename=C:\DataFlex Projects\FutbolWebApp\AppSrc\SelectJugador.wo
+ViewType=1
+Top=21
+Left=0
+Bottom=1233
+Right=1444
+CursorLine=0
+CursorColumn=0
+TabIndex=6
+TabGroup=0
+[Window6]
 Filename=C:\DataFlex Projects\FutbolWebApp\AppSrc\ZoomJugador.wo
 ViewType=1
 Top=21
 Left=0
-Bottom=628
+Bottom=1233
 Right=1444
-CursorLine=169
-CursorColumn=42
+CursorLine=161
+CursorColumn=0
 TabIndex=4
+TabGroup=0
+[Window7]
+Filename=C:\DataFlex Projects\FutbolWebApp\AppSrc\AsignarPosicion.wo
+ViewType=1
+Top=21
+Left=0
+Bottom=1233
+Right=1444
+CursorLine=71
+CursorColumn=23
+TabIndex=5
 TabGroup=0

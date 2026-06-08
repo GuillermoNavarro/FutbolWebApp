@@ -41,6 +41,54 @@ Object oAsignarPosicion is a cWebView
     Object oWebMainPanel is a cWebPanel
         Set piColumnCount to 12
         
+         Object oPonerBtn is a cWebButton
+            Set psCaption to "->"
+            Set piColumnIndex to 1
+            Set piColumnSpan to 4
+        
+            Procedure OnClick
+                
+                Integer iPosicion iJugador
+                Boolean bFound
+                Get Field_Current_Value of oposicionTodas_DD Field posicion.ID to iPosicion
+                Get Field_Current_Value of ojugador_DD Field jugador.ID to iJugador
+                Send Clear of ojugadorPosicion_DD
+                Move iPosicion to jugadorposicion.PosicionID
+                Move iJugador to jugadorposicion.JugadorID
+                Send Request_Find of ojugadorPosicion_DD EQ jugadorposicion.File_Number 2
+                Move Found to bFound
+                
+                If (bFound) Begin
+                    Send ShowInfoBox "Posicion ya asignada"
+                End
+                Else Begin
+                    Send Clear of oposicion_DD
+                    Move iPosicion to posicion.ID
+                    Send Request_Find of oposicion_DD EQ posicion.File_Number 1
+                    Move Found to bFound
+                    
+                    If (bFound) Begin
+                        Send Request_Save of ojugadorPosicion_DD
+                    End
+                    Else Begin
+                        Send ShowInfoBox "La posicion no existe"
+                    End
+                End
+                
+                Send RefreshListFromDD of oposicionJugador
+            End_Procedure
+         End_Object
+         
+          Object oQuitarBtn is a cWebButton
+            Set psCaption to "<-"
+            Set piColumnIndex to 7
+            Set piColumnSpan to 4
+        
+            Procedure OnClick
+            End_Procedure
+        End_Object
+         
+        
         Object oposicion is a cWebList
             Set Server to oposicionTodas_DD
             Set piColumnIndex to 1
@@ -54,12 +102,14 @@ Object oAsignarPosicion is a cWebView
                 Set piWidth to 150
             End_Object
         End_Object
+
         
+       
   
       
          Object oposicionJugador is a cWebList
             Set Ordering to 2
-            Set piColumnIndex to 6
+            Set piColumnIndex to 7
             Set piColumnSpan to 4
             Set pbShowHeader to True
             Set piMinHeight to 1000
@@ -70,6 +120,8 @@ Object oAsignarPosicion is a cWebView
                 Set piWidth to 150
             End_Object
         End_Object
+        
+          
         
     End_Object
 
