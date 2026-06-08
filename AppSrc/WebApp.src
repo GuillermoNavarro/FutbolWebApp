@@ -107,6 +107,17 @@ Object oWebApp is a cWebApp
                                 Send NavigatePath
                         End_Procedure
                     End_Object
+
+                    Object oAsignarPosicionItem1 is a cWebMenuItem
+                        Set psCaption to "AsignarPosicion"
+
+                        WebRegisterPath ntNavigateBegin oAsignarPosicion
+
+                        Procedure OnClick
+                            Forward Send OnClick
+                                Send NavigatePath
+                        End_Procedure
+                    End_Object
                 End_Object
 
                 Object oSignOut_itm is a cWebMenuItem
@@ -198,6 +209,7 @@ Object oWebApp is a cWebApp
     Use ZoomEquipo.wo
     Use SelectLiga.wo
     Use ZoomLiga.wo
+    Use AsignarPosicion.wo
     Set phoDefaultView to oDashboard
 
 End_Object
