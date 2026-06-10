@@ -48,8 +48,9 @@ Object oZoomEntrenador is a cWebView
                 
             Procedure OnClick
                 Send Clear of oequipo_DD
-                Set Field_Changed_Value of oentrenador_DD Field entrenador.EquipoID to ""
+                //Set Field_Changed_Value of oentrenador_DD Field entrenador.EquipoID to 0
                 Send Request_Save of oentrenador_DD
+                //Send NavigateClose Self
             End_Procedure
           End_Object
 
